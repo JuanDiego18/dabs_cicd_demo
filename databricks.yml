@@ -7,7 +7,7 @@ include:
   - resources/*.yml
 
 targets:
-  # The 'dev' target, for development purposes. This is the default target. 
+  # The 'dev' target, for development purposes. This is the default target. Small change
   dev:
     # We use 'mode: development' to indicate this is a personal development copy:
     # - Deployed resources get prefixed with '[dev my_user_name]'
