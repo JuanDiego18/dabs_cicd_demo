@@ -6,6 +6,17 @@ bundle:
 include:
   - resources/*.yml
 
+variables:
+  dbt_catalog:
+    description: Catalog to use for DBT
+    default: develoment-catalog
+  dbt_schema:
+    description: Schema to use for DBT
+    default: dbt-schema
+  dbt_warehouse:
+    description: SQL Warehouse running the DBT SQL commands
+    default: 88f296a4979acc8d
+
 targets:
   # The 'dev' target, for development purposes. This is the default target. a change
   
@@ -16,6 +27,10 @@ targets:
     # - The 'development' mode is used for Delta Live Tables pipelines
     mode: development
     default: true
+    variables:
+      dbt_catalog: develoment-catalog
+      dbt_schema: dbt-schema
+      dbt_warehouse: 88f296a4979acc8d
     workspace:
       host: https://adb-1365448036963043.3.azuredatabricks.net
 
@@ -31,6 +46,10 @@ targets:
     # We use 'mode: production' to indicate this is a production deployment.
     # Doing so enables strict verification of the settings below.
     mode: production
+    variables:
+      dbt_catalog: production-catalog
+      dbt_schema: dbt-schema
+      dbt_warehouse: d16165354054330c
     workspace:
       host: https://adb-1696662290947888.8.azuredatabricks.net
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
