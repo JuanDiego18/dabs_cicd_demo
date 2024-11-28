@@ -1,7 +1,7 @@
 resources:
   jobs:
-    DBT_Job:
-      name: DBT Job
+    jd_dabs_project_dbt_job:
+      name: jd_dabs_project_dbt_job
       tasks:
         - task_key: dbt-task
           dbt_task:
