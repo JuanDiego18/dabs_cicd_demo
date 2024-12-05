@@ -32,7 +32,7 @@ targets:
       dbt_schema: dbt-schema
       dbt_warehouse: 88f296a4979acc8d
     workspace:
-      host: https://adb-1365448036963043.3.azuredatabricks.net
+      host: https://adb-2846170699408234.14.azuredatabricks.net
 
   ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html.)
@@ -51,7 +51,7 @@ targets:
       dbt_schema: dbt-schema
       dbt_warehouse: d16165354054330c
     workspace:
-      host: https://adb-1696662290947888.8.azuredatabricks.net
+      host: https://adb-2651209718731642.2.azuredatabricks.net
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/juandiego.vargasrosales@databricks.com/.bundle/${bundle.name}/${bundle.target}
