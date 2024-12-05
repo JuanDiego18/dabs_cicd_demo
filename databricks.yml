@@ -15,10 +15,10 @@ variables:
     default: dbt-schema
   dbt_warehouse:
     description: SQL Warehouse running the DBT SQL commands
-    default: 88f296a4979acc8d
+    default: 14438c5ec80a77f1
 
 targets:
-  # The 'dev' target, for development purposes. This is the default target. a change
+  # The 'dev' target, for development purposes. This is the default target in the project. Small change
   
   dev:
     # We use 'mode: development' to indicate this is a personal development copy:
@@ -28,11 +28,11 @@ targets:
     mode: development
     default: true
     variables:
-      dbt_catalog: develoment-catalog
+      dbt_catalog: development-catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 88f296a4979acc8d
+      dbt_warehouse: 14438c5ec80a77f1
     workspace:
-      host: https://adb-1365448036963043.3.azuredatabricks.net
+      host: https://adb-2846170699408234.14.azuredatabricks.net
 
   ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html.)
@@ -49,9 +49,9 @@ targets:
     variables:
       dbt_catalog: production-catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: d16165354054330c
+      dbt_warehouse: ff8ba8ed37733607
     workspace:
-      host: https://adb-1696662290947888.8.azuredatabricks.net
+      host: https://adb-2651209718731642.2.azuredatabricks.net
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/juandiego.vargasrosales@databricks.com/.bundle/${bundle.name}/${bundle.target}
