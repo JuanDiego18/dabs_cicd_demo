@@ -28,7 +28,7 @@ targets:
     mode: development
     default: true
     variables:
-      dbt_catalog: develoment-catalog
+      dbt_catalog: development-catalog
       dbt_schema: dbt-schema
       dbt_warehouse: 14438c5ec80a77f1
     workspace:
