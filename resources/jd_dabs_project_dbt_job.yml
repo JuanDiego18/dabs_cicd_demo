@@ -3,7 +3,12 @@ resources:
     jd_dabs_project_dbt_job:
       name: jd_dabs_project_dbt_job
       tasks:
-        - task_key: dbt-task
+        - task_key: dbt-data-creation
+          notebook_task:
+            notebook_path: ../src/dbt_data.ipynb
+        - task_key: dbt-taks
+          depends_on:
+            - task_key: dbt-data-creation
           dbt_task:
             project_directory: ""
             commands:
