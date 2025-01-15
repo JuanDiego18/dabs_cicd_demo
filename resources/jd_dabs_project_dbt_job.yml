@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: dbt-data-creation
           notebook_task:
-            notebook_path: src/dbt_data.ipynb  
+            notebook_path: ../src/dbt_data.ipynb
         - task_key: dbt-taks
           depends_on:
             - task_key: dbt-data-creation
