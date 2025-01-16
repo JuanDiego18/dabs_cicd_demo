@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: dbt-data-creation
           notebook_task:
-            notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/dev/files/src/dbt_data.ipynb
+            notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/dev/files/src/dbt_data
             source: WORKSPACE
         - task_key: dbt-taks
           depends_on:
