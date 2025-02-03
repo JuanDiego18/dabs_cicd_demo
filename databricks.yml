@@ -30,7 +30,7 @@ targets:
     variables:
       dbt_catalog: development-catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 00d8c64ecdffa15f
+      dbt_warehouse: 322cac920af448ce
     workspace:
       host: https://adb-1522492950378948.8.azuredatabricks.net/
 
@@ -49,7 +49,7 @@ targets:
     variables:
       dbt_catalog: production-catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 9446665ae5fa1cd9
+      dbt_warehouse: 2e263d4a6c5d1899
     workspace:
       host: https://adb-4315856485907437.17.azuredatabricks.net/ 
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
