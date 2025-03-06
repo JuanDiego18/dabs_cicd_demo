@@ -28,11 +28,11 @@ targets:
     mode: development
     default: true
     variables:
-      dbt_catalog: development-catalog
+      dbt_catalog: development_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 38e9f43e61a6826a
+      dbt_warehouse: 546559e3f34b34aa
     workspace:
-      host: https://adb-3705651928296610.10.azuredatabricks.net/
+      host: https://adb-3171757230039021.1.azuredatabricks.net/
 
   ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html.)
@@ -47,11 +47,11 @@ targets:
     # Doing so enables strict verification of the settings below.
     mode: production
     variables:
-      dbt_catalog: production-catalog
+      dbt_catalog: production_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 60546d7f65b91226
+      dbt_warehouse: 5fb1a1d1b268573a
     workspace:
-      host: https://adb-2016256626913382.2.azuredatabricks.net/ 
+      host: https://adb-289380551166504.4.azuredatabricks.net/
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/juandiego.vargasrosales@databricks.com/.bundle/${bundle.name}/${bundle.target}
