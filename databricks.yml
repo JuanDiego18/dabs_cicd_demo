@@ -18,7 +18,7 @@ variables:
     default: 38e9f43e61a6826a
 
 targets:
-  # The 'dev' target, for development purposes. This is the default target in the project. ADD SOME TEXT
+  # The 'dev' target, for development purposes. This is the default target in the project.
     
   dev:
     # We use 'mode: development' to indicate this is a personal development copy:
@@ -30,7 +30,7 @@ targets:
     variables:
       dbt_catalog: development_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 546559e3f34b34aa
+      dbt_warehouse: 9f9f6537093b8255
     workspace:
       host: https://adb-3171757230039021.1.azuredatabricks.net/
 
@@ -49,7 +49,7 @@ targets:
     variables:
       dbt_catalog: production_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 5fb1a1d1b268573a
+      dbt_warehouse: c29046951e4bc540
     workspace:
       host: https://adb-289380551166504.4.azuredatabricks.net/
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
