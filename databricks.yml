@@ -31,7 +31,7 @@ targets:
     mode: development
     default: true
     variables:
-      dbt_catalog: development-catalog
+      dbt_catalog: development_catalog
       dbt_schema: dbt-schema
       dbt_warehouse: c4f4a34d8d67c829
       warehouse_id: c4f4a34d8d67c829
@@ -47,11 +47,11 @@ targets:
 
   # The 'prod' target, used for production deployment.
   prod:
-    # We use 'mode: production' to indicate this is a production deployment.
+    # We use 'mode: production' to indicate this is a production deployment. ADDING CODE
     # Doing so enables strict verification of the settings below.
     mode: production
     variables:
-      dbt_catalog: production-catalog
+      dbt_catalog: production_catalog
       dbt_schema: dbt-schema
       dbt_warehouse: 19a082ab019de4ff
       warehouse_id: 19a082ab019de4ff
