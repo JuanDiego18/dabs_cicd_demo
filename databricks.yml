@@ -21,7 +21,7 @@ variables:
 
 
 targets:
-  # The 'dev' target, for development purposes. This is the default target in the project.
+  # The 'dev' target, for development purposes. This is the default target in the project. ADD SOME CODE
     
   dev:
     # We use 'mode: development' to indicate this is a personal development copy:
@@ -47,7 +47,7 @@ targets:
 
   # The 'prod' target, used for production deployment.
   prod:
-    # We use 'mode: production' to indicate this is a production deployment. ADDING CODE
+    # We use 'mode: production' to indicate this is a production deployment. 
     # Doing so enables strict verification of the settings below.
     mode: production
     variables:
