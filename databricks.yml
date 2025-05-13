@@ -33,10 +33,10 @@ targets:
     variables:
       dbt_catalog: development_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: c80e3fcc9226ffc2
-      warehouse_id: c80e3fcc9226ffc2
+      dbt_warehouse: 83bf884b77e2f6e5
+      warehouse_id: 83bf884b77e2f6e5
     workspace:
-      host: https://adb-999206372626022.2.azuredatabricks.net/
+      host: https://adb-1757452691388482.2.azuredatabricks.net/
 
   ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html.)
@@ -53,10 +53,10 @@ targets:
     variables:
       dbt_catalog: production_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 5e55860be34c022f
-      warehouse_id: 5e55860be34c022f
+      dbt_warehouse: 33f64c05061c6c06
+      warehouse_id: 33f64c05061c6c06
     workspace:
-      host: https://adb-3290646689198764.4.azuredatabricks.net/
+      host: https://adb-619189088101504.4.azuredatabricks.net/
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/juandiego.vargasrosales@databricks.com/.bundle/${bundle.name}/${bundle.target}
