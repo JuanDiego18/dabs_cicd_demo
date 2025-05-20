@@ -36,10 +36,10 @@ targets:
       dbt_warehouse: 83bf884b77e2f6e5
       warehouse_id: 83bf884b77e2f6e5
     workspace:
-      host: https://adb-1757452691388482.2.azuredatabricks.net/
+      host: https://adb-1901434650487443.3.azuredatabricks.net/
 
   ## Optionally, there could be a 'staging' target here.
-  ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html.) ADD TEXT
+  ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html.) AADDING TEXT FOR TESTING
   #
   # staging:
   #   workspace:
@@ -56,7 +56,7 @@ targets:
       dbt_warehouse: 33f64c05061c6c06
       warehouse_id: 33f64c05061c6c06
     workspace:
-      host: https://adb-619189088101504.4.azuredatabricks.net/
+      host: https://adb-1594940724763190.10.azuredatabricks.net/
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/juandiego.vargasrosales@databricks.com/.bundle/${bundle.name}/${bundle.target}
