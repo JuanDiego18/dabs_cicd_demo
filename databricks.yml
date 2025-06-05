@@ -36,7 +36,7 @@ targets:
       dbt_warehouse: f8d0ed45c080b1f9
       warehouse_id: f8d0ed45c080b1f9
     workspace:
-      host: https://adb-1901434650487443.3.azuredatabricks.net/
+      host: https://adb-3799822543072759.19.azuredatabricks.net/
 
   ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html.) AADDING TEXT FOR TESTING
