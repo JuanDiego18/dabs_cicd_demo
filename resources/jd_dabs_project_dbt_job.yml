@@ -17,7 +17,7 @@ resources:
             commands:
               - dbt deps
               - dbt seed
-              - dbt run
+              - "dbt run --vars '{\"dbt_catalog\": \"${var.dbt_catalog}\"}'"
             schema: ${var.dbt_schema}
             warehouse_id: ${var.dbt_warehouse}
             catalog: ${var.dbt_catalog}
