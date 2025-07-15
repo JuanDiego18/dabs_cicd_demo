@@ -5,9 +5,11 @@ resources:
       tasks:
         - task_key: dbt-data-creation
           notebook_task:
-            notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/dev/files/src/dbt_data
+            notebook_path: ${var.dbt_data_notebook_path}
             source: WORKSPACE
-        - task_key: dbt-taks
+            base_parameters:
+              dbt_catalog: ${var.dbt_catalog}
+        - task_key: dbt-taks 
           depends_on:
             - task_key: dbt-data-creation
           dbt_task:

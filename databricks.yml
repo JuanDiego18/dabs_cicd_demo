@@ -18,6 +18,8 @@ variables:
     default: 38e9f43e61a6826a
   warehouse_id:
     description: SQL Warehouse running dashboard
+  dbt_data_notebook_path: 
+    description: Path to the notebook that creates the data for DBT
 
 
 targets:
@@ -35,6 +37,7 @@ targets:
       dbt_schema: dbt-schema
       dbt_warehouse: b400fd8ff0fbe95b
       warehouse_id: b400fd8ff0fbe95b
+      dbt_data_notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/dev/files/src/dbt_data
     workspace:
       host: https://adb-3792141730010664.4.azuredatabricks.net/
 
@@ -55,6 +58,7 @@ targets:
       dbt_schema: dbt-schema
       dbt_warehouse: 740e74a406d8fbf2
       warehouse_id: 740e74a406d8fbf2
+      dbt_data_notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/prod/files/src/dbt_data
     workspace:
       host: https://adb-3573558089388526.6.azuredatabricks.net/
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
