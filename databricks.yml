@@ -23,7 +23,7 @@ variables:
 
 
 targets:
-  # The 'dev' target, for development purposes. This is the default target in the project. TESTING
+  # The 'dev' target, for development purposes. This is the default target in the project. TESTING purpose
     
   dev:
     # We use 'mode: development' to indicate this is a personal development copy:
