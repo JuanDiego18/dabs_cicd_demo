@@ -16,8 +16,12 @@ variables:
   dbt_warehouse:
     description: SQL Warehouse running the DBT SQL commands
     default: 38e9f43e61a6826a
+    lookup:
+      warehouse: 'Juan Diego Warehouse'
   warehouse_id:
     description: SQL Warehouse running dashboard
+    lookup:
+      warehouse: 'Juan Diego Warehouse'
   dbt_data_notebook_path: 
     description: Path to the notebook that creates the data for DBT
 
@@ -35,8 +39,8 @@ targets:
     variables:
       dbt_catalog: development_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: b400fd8ff0fbe95b
-      warehouse_id: b400fd8ff0fbe95b
+      #dbt_warehouse: b400fd8ff0fbe95b
+      #warehouse_id: b400fd8ff0fbe95b
       dbt_data_notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/dev/files/src/dbt_data
     workspace:
       host: https://adb-3792141730010664.4.azuredatabricks.net/
@@ -56,8 +60,8 @@ targets:
     variables:
       dbt_catalog: production_catalog
       dbt_schema: dbt-schema
-      dbt_warehouse: 740e74a406d8fbf2
-      warehouse_id: 740e74a406d8fbf2
+      #dbt_warehouse: 740e74a406d8fbf2
+      #warehouse_id: 740e74a406d8fbf2
       dbt_data_notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/prod/files/src/dbt_data
     workspace:
       host: https://adb-3573558089388526.6.azuredatabricks.net/
