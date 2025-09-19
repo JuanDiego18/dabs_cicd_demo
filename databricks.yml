@@ -27,7 +27,7 @@ variables:
 
 
 targets:
-  # The 'dev' target, for development purposes. This is the default target in the project. ADD SOME TEXT ADDITIONAL
+  # The 'dev' target, for development purposes. This is the default target in the project. 
     
   dev:
     # We use 'mode: development' to indicate this is a personal development copy:
