@@ -14,7 +14,7 @@ variables:
     description: Schema to use for DBT
     default: dbt-schema
   dbt_warehouse:
-    description: SQL Warehouse running the DBT SQL commands
+    description: SQL Warehouse running the DBT SQL commands. ADD TEXT
     default: 38e9f43e61a6826a
     lookup:
       warehouse: 'Juan Diego Warehouse'
