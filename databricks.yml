@@ -27,7 +27,7 @@ variables:
 
 
 targets:
-  # The 'dev' target, for development purposes. This is the default target in the project. 
+  # The 'dev' target, for development purposes. This is the default target in the project. ADDING TEXT
     
   dev:
     # We use 'mode: development' to indicate this is a personal development copy:
@@ -43,7 +43,7 @@ targets:
       #warehouse_id: b400fd8ff0fbe95b
       dbt_data_notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/dev/files/src/dbt_data
     workspace:
-      host: https://adb-777301849770113.13.azuredatabricks.net/
+      host: https://adb-3579249950235123.3.azuredatabricks.net/
 
   ## Optionally, there could be a 'staging' target here.
   ## (See Databricks docs on CI/CD at https://docs.databricks.com/dev-tools/bundles/index.html. 
@@ -64,7 +64,7 @@ targets:
       #warehouse_id: 740e74a406d8fbf2
       dbt_data_notebook_path: /Workspace/Users/juandiego.vargasrosales@databricks.com/.bundle/jd_dabs_project/prod/files/src/dbt_data
     workspace:
-      host: https://adb-3089975168504242.2.azuredatabricks.net/
+      host: https://adb-3325075106693689.9.azuredatabricks.net/
       # We always use /Users/juandiego.vargasrosales@databricks.com for all resources to make sure we only have a single copy.
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/juandiego.vargasrosales@databricks.com/.bundle/${bundle.name}/${bundle.target}
