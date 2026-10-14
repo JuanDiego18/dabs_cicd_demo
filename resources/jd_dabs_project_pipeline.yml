@@ -3,7 +3,8 @@ resources:
   pipelines:
     jd_dabs_project_pipeline:
       name: jd_dabs_project_pipeline
-      target: jd_dabs_project_${bundle.environment}
+      catalog: ${bundle.variables.main_catalog}
+      schema: ${bundle.variables.main_schema}
       libraries:
         - notebook:
             path: ../src/dlt_pipeline.ipynb
